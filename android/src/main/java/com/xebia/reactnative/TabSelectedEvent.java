@@ -8,11 +8,12 @@ import com.facebook.react.uimanager.events.RCTEventEmitter;
 
 public class TabSelectedEvent extends Event<TabSelectedEvent> {
   public static final String EVENT_NAME = "tabSelected";
-  private final int position;
+  //private final int position;
 
   public TabSelectedEvent(int viewTag, int position) {
     super(viewTag);
-    this.position = position;
+    //super(viewTag, SystemClock.uptimeMillis());
+    //this.position = position;
   }
 
   @Override
